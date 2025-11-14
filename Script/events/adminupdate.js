@@ -25,7 +25,7 @@ try {
         case "log:thread-admins": {  
             if (logMessageData.ADMIN_EVENT == "add_admin") {  
                 dataThread.adminIDs.push({ id: logMessageData.TARGET_ID })  
-                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID}  Admin Power Activate! 🧙‍♂️🔮\n অফিসিয়ালি এখন তুই VIP 😎🎩`, threadID, async (error, info) => {  
+                if (global.configModule[this.config.name].sendNoti) api.sendMessage(`»» NOTICE «« Update user ${logMessageData.TARGET_ID}  Admin Power Activate! 🧙‍♂️🔮\n অফিসিয়ালি এখন তুই VIP আসা করি ঠিক মত দায়িত্ব পালন করবি😎🎩`, threadID, async (error, info) => {  
                     if (global.configModule[this.config.name].autoUnsend) {  
                         await new Promise(resolve => setTimeout(resolve, global.configModule[this.config.name].timeToUnsend * 1000));  
                         return api.unsendMessage(info.messageID);  
@@ -70,7 +70,7 @@ try {
       api.sendMessage(`[ GROUP UPDATE ]\n❯ ${(logMessageData.video) ? 'Video' : ''} call has ended.\n❯ Call duration: ${timeFormat}`, threadID);  
     } else if (logMessageData.joining_user) {  
       const name = await Users.getNameUser(logMessageData.joining_user);  
-      api.sendMessage(`❯ [ GROUP UPDATE ]\n❯ ${name} Joined the ${(logMessageData.group_call_type == '1') ? 'Video' : ''} call.`, threadID);  
+      api.sendMessage(`❯ [ GROUP UPDATE ]\n❯ ${name} Joined the ${(logMessageData.group_call_type == '') ? 'Video' : ''} call.`, threadID);  
     }  
     break;  
         }  
@@ -112,4 +112,3 @@ try {
 } catch (e) { console.log(e) };
 
 }
-
