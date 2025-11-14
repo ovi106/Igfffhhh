@@ -5,7 +5,7 @@ module.exports.config = {
  credits: "Shahadat Islam",
  description: "Send group rules",
  commandCategory: "information",
- usages: "rules2",
+ usages: "Rulse",
  cooldowns: 5
 };
 
