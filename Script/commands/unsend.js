@@ -1,11 +1,11 @@
 module.exports.config = {
-	name: "unsend",
+	name: "delet",
 	version: "1.0.1",
 	hasPermssion: 0,
 	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
 	description: "Gỡ tin nhắn của bot",
 	commandCategory: "system",
-	usages: "unsend",
+	usages: "delet",
 	cooldowns: 0
 };
 
