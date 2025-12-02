@@ -51,7 +51,7 @@ module.exports.run = async function ({ api, event, args }) {
 
   } catch (err) {
     return api.sendMessage(
-      "API Error Boss ovi re Dakh😹: " + err.message,
+      "API Error Boss Sahu re Dakh😹: " + err.message,
       event.threadID,
       event.messageID
     );
